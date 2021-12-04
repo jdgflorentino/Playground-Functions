@@ -44,8 +44,19 @@ function generatePhoneNumber(numeros) {
 }
 
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
     // seu código aqui
+    let result = false;
+
+    if (lineA > (lineB + lineC) || lineB > (lineA + lineC) || lineC > (lineA + lineB)) {
+        return result;
+    } else if (lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA - lineB)) {
+        return result;
+    } else {
+        result = true;
+    }
+    return result;
+
 }
 
 // Desafio 13
