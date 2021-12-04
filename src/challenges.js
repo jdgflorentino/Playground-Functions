@@ -71,25 +71,65 @@ function fizzBuzz(numeros) {
     let palavras = [];
     for (let i = 0; i < numeros.length; i += 1) {
         if (numeros[i] % 3 === 0 && numeros[i] % 5 === 0) {
-            palavras.push("fizzBuzz");
+            palavras.push('fizzBuzz');
         } else if (numeros[i] % 5 === 0) {
-            palavras.push("buzz");
+            palavras.push('buzz');
         } else if (numeros[i] % 3 === 0) {
-            palavras.push("fizz");
+            palavras.push('fizz');
         } else {
-            palavras.push("bug!");
+            palavras.push('bug!');
         }
     }
     return palavras;
 }
 
 // Desafio 9
-function encode() {
+
+function encode(frase) {
     // seu código aqui
+
+    let result = '';
+
+    for (let i of frase) {
+        if (i === 'a') {
+            result += '1';
+        } else if (i === 'e') {
+            result += '2';
+        } else if (i === 'i') {
+            result += '3';
+        } else if (i === 'o') {
+            result += '4';
+        } else if (i === 'u') {
+            result += '5';
+        } else {
+            result += i;
+        }
+    }
+
+    return result;
 }
 
-function decode() {
+function decode(numeros) {
     // seu código aqui
+    let result = '';
+
+    for (let i of numeros) {
+        if (i === '1') {
+            result += 'a';
+        } else if (i === '2') {
+            result += 'e';
+        } else if (i === '3') {
+            result += 'i';
+        } else if (i === '4') {
+            result += 'o';
+        } else if (i === '5') {
+            result += 'u';
+        } else {
+            result += i;
+        }
+    }
+
+    return result;
 }
 
 module.exports = {
