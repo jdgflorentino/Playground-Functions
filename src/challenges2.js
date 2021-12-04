@@ -48,20 +48,36 @@ function triangleCheck(lineA, lineB, lineC) {
     // seu código aqui
     let result = false;
 
-    if (lineA > (lineB + lineC) || lineB > (lineA + lineC) || lineC > (lineA + lineB)) {
+    if (lineA > lineB + lineC || lineB > lineA + lineC || lineC > lineA + lineB) {
         return result;
-    } else if (lineA < Math.abs(lineB - lineC) || lineB < Math.abs(lineA - lineC) || lineC < Math.abs(lineA - lineB)) {
+    } else if (
+        lineA < Math.abs(lineB - lineC) ||
+        lineB < Math.abs(lineA - lineC) ||
+        lineC < Math.abs(lineA - lineB)
+    ) {
         return result;
     } else {
         result = true;
     }
     return result;
-
 }
 
 // Desafio 13
-function hydrate() {
+function hydrate(bebidas) {
     // seu código aqui
+
+    let quant = 0;
+    bebidas = bebidas.match(/\d+/g);
+
+    for (let i = 0; i < bebidas.length; i += 1) {
+        quant += parseInt(bebidas[i]);
+    }
+
+    if ((quant > 1)) {
+        return quant + ' copos de água'
+    } else {
+        return '1 copo de água'
+    }
 }
 
 module.exports = {
