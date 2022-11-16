@@ -1,13 +1,23 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+<h1 align="center">:woman_cartwheeling: Playground Functions :woman_cartwheeling:</h1>
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+## 📰 Sobre o projeto
+  
+  Com objetivo de consolidar os aprendizados fundamentais na linguagem Javascript, com esse projeto pude:
+- Escrever códigos que usam variáveis e tipos primitivos
+- Utilizar conceitos da linguagem como a tipagem dinâmica e operadores lógicos/aritméticos/de atribuição no código;
+- Criar códigos que usam estruturas condicionais, como o if/else ;
+- Manipular arrays (listas);
+- Utilizar o comando for;
+- Quebrar grandes problemas em pequenos;
+- Utilizar a lógica de programação na resolução de problemas;
+- Manipular objetos;
+- Utilizar o comando for/in ;
+- Utilizar funções para organizar e estruturar o código;
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+-  **[Javascript]**
